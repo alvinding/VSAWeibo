@@ -14,6 +14,7 @@
 #import "VSAComposePhoto.h"
 #import "VSAEmotionKeyboard.h"
 #import "MBProgressHUD.h"
+#import "VSAEmotion.h"
 
 @interface VSAComposeController () <UITextViewDelegate, VSAComposeToolbarDelegate, UIImagePickerControllerDelegate>
 @property (nonatomic, weak) VSATextView *textView;
@@ -83,6 +84,9 @@
     emotionKeyboard.width = self.view.bounds.size.width;
     self.emotionKeyboard = emotionKeyboard;
 //    self.textView.inputView = emotionKeyboard;
+    
+    //通知表情按钮被选
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(emotionDidSelect:) name:VSAEmotionButtonDidSelectNotification object:nil];
 }
 
 - (void)setupToolbar {
@@ -102,6 +106,38 @@
 }
 
 #pragma mark - 监听事件方法
+
+- (void)emotionDidSelect:(NSNotification *)notification {
+    VSAEmotion *emotion = notification.userInfo[VSASelectedEmotionButtonKey];
+    if (emotion.code) {
+        [self.textView insertText:emotion.code.emoji];
+    } else if (emotion.png) {
+        NSTextAttachment *attachment = [[NSTextAttachment alloc] init];
+        attachment.image = [UIImage imageNamed:emotion.png];
+        
+        //拼接当前显示的文字
+        NSMutableAttributedString *aString = [[NSMutableAttributedString alloc] init];
+        [aString appendAttributedString:self.textView.attributedText];
+        
+        //拼接图片attach
+        NSAttributedString *attributed = [NSAttributedString attributedStringWithAttachment:attachment];
+//        [aString appendAttributedString:attributed];
+        
+        //光标位置插入表情
+        NSUInteger location = self.textView.selectedRange.location;
+        [aString insertAttributedString:attributed atIndex:location];
+        
+        //设置大小
+        CGFloat fontHeight = self.textView.font.lineHeight;
+        attachment.bounds = CGRectMake(0, -4, fontHeight, fontHeight);
+        [aString addAttribute:NSFontAttributeName value:self.textView.font range:NSMakeRange(0, aString.length)];
+        self.textView.attributedText = aString;
+        
+        //重置光标位置为插入表情的后面
+        self.textView.selectedRange = NSMakeRange(location + 1, 0);
+    }
+    NSLog(@"%@", emotion.chs);
+}
 
 - (void)cancelClick {
     [self dismissViewControllerAnimated:YES completion:nil];

@@ -7,16 +7,26 @@
 //
 
 #import "VSAProfileViewController.h"
+#import "VSAProfileCellModel.h"
+#import "MJExtension.h"
 
 @interface VSAProfileViewController ()
-
+@property (nonatomic, strong) NSArray *cellModels;
 @end
 
 @implementation VSAProfileViewController
 
+- (NSArray *)cellModels {
+    if (!_cellModels) {
+        NSString *path = [[NSBundle mainBundle] pathForResource:@"AboutMe.plist" ofType:nil];
+        _cellModels = [VSAProfileCellModel objectArrayWithFile:path];
+    }
+    
+    return _cellModels;
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
     
@@ -31,27 +41,26 @@
 
 #pragma mark - Table view data source
 
-- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-#warning Potentially incomplete method implementation.
-    // Return the number of sections.
-    return 0;
-}
-
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
 #warning Incomplete method implementation.
     // Return the number of rows in the section.
-    return 0;
+    return self.cellModels.count;
 }
 
-/*
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:<#@"reuseIdentifier"#> forIndexPath:indexPath];
-    
-    // Configure the cell...
+    NSString *identifier = @"profileCell";
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:identifier];
+    if (!cell) {
+        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleValue1 reuseIdentifier:identifier];
+        VSAProfileCellModel *model = self.cellModels[indexPath.row];
+        cell.imageView.image = [UIImage imageNamed:model.pic];
+        cell.textLabel.text = model.name;
+        cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
+    }
     
     return cell;
 }
-*/
+
 
 /*
 // Override to support conditional editing of the table view.

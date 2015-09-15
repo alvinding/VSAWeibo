@@ -68,7 +68,12 @@
 		E1E664DA1B837DC1003F407D /* UIImageView+HighlightedWebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = E1E664C81B837DC1003F407D /* UIImageView+HighlightedWebCache.m */; };
 		E1E664DB1B837DC1003F407D /* UIImageView+WebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = E1E664CA1B837DC1003F407D /* UIImageView+WebCache.m */; };
 		E1E664DC1B837DC1003F407D /* UIView+WebCacheOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = E1E664CC1B837DC1003F407D /* UIView+WebCacheOperation.m */; };
+		E1E72E9E1BA6EDAD004791D6 /* AboutMe.plist in Resources */ = {isa = PBXBuildFile; fileRef = E1E72E9D1BA6EDAD004791D6 /* AboutMe.plist */; };
+		E1E72EA11BA6F14B004791D6 /* VSAProfileCellModel.m in Sources */ = {isa = PBXBuildFile; fileRef = E1E72EA01BA6F14B004791D6 /* VSAProfileCellModel.m */; };
 		E1E88BFB1BA51DF800F171DB /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = E1E88BFA1BA51DF800F171DB /* MBProgressHUD.m */; };
+		E1F190981BA7DE7800D5458E /* VSAEmotionPopView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E1F190971BA7DE7800D5458E /* VSAEmotionPopView.xib */; };
+		E1F1909B1BA7E06C00D5458E /* VSAEmotionPopView.m in Sources */ = {isa = PBXBuildFile; fileRef = E1F1909A1BA7E06C00D5458E /* VSAEmotionPopView.m */; };
+		E1F1909E1BA7F52E00D5458E /* VSAEmotionButton.m in Sources */ = {isa = PBXBuildFile; fileRef = E1F1909D1BA7F52E00D5458E /* VSAEmotionButton.m */; };
 		E1F7FAE81B95EA14005ACDF3 /* VSATextView.m in Sources */ = {isa = PBXBuildFile; fileRef = E1F7FAE71B95EA14005ACDF3 /* VSATextView.m */; };
 		E1F7FAED1B95EE05005ACDF3 /* VSAComposeController.m in Sources */ = {isa = PBXBuildFile; fileRef = E1F7FAEC1B95EE05005ACDF3 /* VSAComposeController.m */; };
 		E1F8384B1B9AAD74003DC165 /* VSAComposeToolbar.m in Sources */ = {isa = PBXBuildFile; fileRef = E1F8384A1B9AAD74003DC165 /* VSAComposeToolbar.m */; };
@@ -220,8 +225,16 @@
 		E1E664CA1B837DC1003F407D /* UIImageView+WebCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+WebCache.m"; sourceTree = "<group>"; };
 		E1E664CB1B837DC1003F407D /* UIView+WebCacheOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+WebCacheOperation.h"; sourceTree = "<group>"; };
 		E1E664CC1B837DC1003F407D /* UIView+WebCacheOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+WebCacheOperation.m"; sourceTree = "<group>"; };
+		E1E72E9D1BA6EDAD004791D6 /* AboutMe.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = AboutMe.plist; sourceTree = "<group>"; };
+		E1E72E9F1BA6F14B004791D6 /* VSAProfileCellModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VSAProfileCellModel.h; sourceTree = "<group>"; };
+		E1E72EA01BA6F14B004791D6 /* VSAProfileCellModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VSAProfileCellModel.m; sourceTree = "<group>"; };
 		E1E88BF91BA51DF800F171DB /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
 		E1E88BFA1BA51DF800F171DB /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
+		E1F190971BA7DE7800D5458E /* VSAEmotionPopView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = VSAEmotionPopView.xib; sourceTree = "<group>"; };
+		E1F190991BA7E06C00D5458E /* VSAEmotionPopView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VSAEmotionPopView.h; sourceTree = "<group>"; };
+		E1F1909A1BA7E06C00D5458E /* VSAEmotionPopView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VSAEmotionPopView.m; sourceTree = "<group>"; };
+		E1F1909C1BA7F52E00D5458E /* VSAEmotionButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VSAEmotionButton.h; sourceTree = "<group>"; };
+		E1F1909D1BA7F52E00D5458E /* VSAEmotionButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VSAEmotionButton.m; sourceTree = "<group>"; };
 		E1F7FAE61B95EA14005ACDF3 /* VSATextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VSATextView.h; sourceTree = "<group>"; };
 		E1F7FAE71B95EA14005ACDF3 /* VSATextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VSATextView.m; sourceTree = "<group>"; };
 		E1F7FAEB1B95EE05005ACDF3 /* VSAComposeController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VSAComposeController.h; sourceTree = "<group>"; };
@@ -310,6 +323,7 @@
 				E1E4C4B41B9FBFF0007FB5D9 /* EmotionIcons */,
 				E1D54DE91B778E6000099ABA /* Info.plist */,
 				E1D881721B78BF9C001D748E /* VSAWebo.pch */,
+				E1E72E9D1BA6EDAD004791D6 /* AboutMe.plist */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -560,6 +574,8 @@
 		E1D7423D1B7A55F900CE8C56 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				E1E72E9F1BA6F14B004791D6 /* VSAProfileCellModel.h */,
+				E1E72EA01BA6F14B004791D6 /* VSAProfileCellModel.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -756,6 +772,11 @@
 				E1E387A51B9E974E00E97D2B /* VSAEmotionCollection.m */,
 				E1E4C4BA1BA0296C007FB5D9 /* VSAEmotionPageView.h */,
 				E1E4C4BB1BA0296C007FB5D9 /* VSAEmotionPageView.m */,
+				E1F190971BA7DE7800D5458E /* VSAEmotionPopView.xib */,
+				E1F190991BA7E06C00D5458E /* VSAEmotionPopView.h */,
+				E1F1909A1BA7E06C00D5458E /* VSAEmotionPopView.m */,
+				E1F1909C1BA7F52E00D5458E /* VSAEmotionButton.h */,
+				E1F1909D1BA7F52E00D5458E /* VSAEmotionButton.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -870,10 +891,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E1F190981BA7DE7800D5458E /* VSAEmotionPopView.xib in Resources */,
 				E1E4C4B51B9FBFF0007FB5D9 /* EmotionIcons in Resources */,
 				E1D54DF91B778E6000099ABA /* LaunchScreen.xib in Resources */,
 				E1D54DF61B778E6000099ABA /* Images.xcassets in Resources */,
 				E1D7424A1B7A55F900CE8C56 /* VSATest2ViewController.xib in Resources */,
+				E1E72E9E1BA6EDAD004791D6 /* AboutMe.plist in Resources */,
 				E1D742481B7A55F900CE8C56 /* VSATest1ViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -908,6 +931,7 @@
 				E1F7FAED1B95EE05005ACDF3 /* VSAComposeController.m in Sources */,
 				E1E4AD181B820D64004F3F08 /* AFHTTPRequestOperation.m in Sources */,
 				E1F9A3431B90B3390053B59E /* MJPropertyType.m in Sources */,
+				E1E72EA11BA6F14B004791D6 /* VSAProfileCellModel.m in Sources */,
 				E1F7FAE81B95EA14005ACDF3 /* VSATextView.m in Sources */,
 				E1F9A33E1B90B3390053B59E /* MJDictionaryCache.m in Sources */,
 				E1E664D31B837DC1003F407D /* SDWebImageDownloaderOperation.m in Sources */,
@@ -926,6 +950,7 @@
 				E1E88BFB1BA51DF800F171DB /* MBProgressHUD.m in Sources */,
 				E1D742441B7A55F900CE8C56 /* VSANaviController.m in Sources */,
 				E1E4C4BF1BA03EA5007FB5D9 /* NSString+Emoji.m in Sources */,
+				E1F1909B1BA7E06C00D5458E /* VSAEmotionPopView.m in Sources */,
 				E1F9A3421B90B3390053B59E /* MJPropertyKey.m in Sources */,
 				E1E4AD1D1B820D64004F3F08 /* AFURLConnectionOperation.m in Sources */,
 				E1E664DB1B837DC1003F407D /* UIImageView+WebCache.m in Sources */,
@@ -933,6 +958,7 @@
 				E1F9A3451B90B3390053B59E /* NSObject+MJCoding.m in Sources */,
 				E1F9A3441B90B3390053B59E /* NSObject+MJClass.m in Sources */,
 				E1E4AD1E1B820D64004F3F08 /* AFURLRequestSerialization.m in Sources */,
+				E1F1909E1BA7F52E00D5458E /* VSAEmotionButton.m in Sources */,
 				E1E387A61B9E974E00E97D2B /* VSAEmotionCollection.m in Sources */,
 				E1E664D61B837DC1003F407D /* UIButton+WebCache.m in Sources */,
 				E1E664D21B837DC1003F407D /* SDWebImageDownloader.m in Sources */,
@@ -1031,7 +1057,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -1066,7 +1092,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
@@ -1081,6 +1107,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/VSAWebo/VSAWebo.pch";
 				INFOPLIST_FILE = VSAWebo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -1093,6 +1120,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/VSAWebo/VSAWebo.pch";
 				INFOPLIST_FILE = VSAWebo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
