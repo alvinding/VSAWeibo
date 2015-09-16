@@ -17,27 +17,18 @@
     } else if (emotion.png) {
         //        [self.textView insertText:emotion.chs]; //实际上发送微博要的是emotion.chs [哈哈]
         
-        //拼接当前显示的文字
-        NSMutableAttributedString *aString = [[NSMutableAttributedString alloc] init];
-        [aString appendAttributedString:self.attributedText];
-        
+        //图片attach
         NSTextAttachment *attachment = [[NSTextAttachment alloc] init];
         attachment.image = [UIImage imageNamed:emotion.png];
-        //拼接图片attach
-        NSAttributedString *attributed = [NSAttributedString attributedStringWithAttachment:attachment];
-        
-        //光标位置插入表情
-        NSUInteger location = self.selectedRange.location;
-        [aString insertAttributedString:attributed atIndex:location];
-        
-        //设置大小
         CGFloat fontHeight = self.font.lineHeight;
         attachment.bounds = CGRectMake(0, -4, fontHeight, fontHeight);
-        [aString addAttribute:NSFontAttributeName value:self.font range:NSMakeRange(0, aString.length)];
-        self.attributedText = aString;
+        NSAttributedString *attributed = [NSAttributedString attributedStringWithAttachment:attachment];
         
-        //重置光标位置为插入表情的后面
-        self.selectedRange = NSMakeRange(location + 1, 0);
+        [self insertAttributedText:attributed];
+        
+        NSMutableAttributedString *textString = (NSMutableAttributedString *)self.attributedText;
+        //拿到所有内容，设置大小
+        [textString addAttribute:NSFontAttributeName value:self.font range:NSMakeRange(0, textString.length)];
     }
 }
 

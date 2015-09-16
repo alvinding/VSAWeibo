@@ -14,6 +14,7 @@
 #import "UIView+Extension.h"
 #import "UIBarButtonItem+Extension.h"
 #import "NSString+Emoji.h"
+#import "UITextView+Extension.h"
 
 #define VSARandomColor VSAColor(arc4random_uniform(256),arc4random_uniform(256),arc4random_uniform(256))
 #define VSAColor(r, g, b) [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:1.0]

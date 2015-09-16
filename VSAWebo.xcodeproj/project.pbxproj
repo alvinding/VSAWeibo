@@ -37,6 +37,7 @@
 		E1E387A31B9E972700E97D2B /* VSAEmotionTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = E1E387A21B9E972700E97D2B /* VSAEmotionTabBar.m */; };
 		E1E387A61B9E974E00E97D2B /* VSAEmotionCollection.m in Sources */ = {isa = PBXBuildFile; fileRef = E1E387A51B9E974E00E97D2B /* VSAEmotionCollection.m */; };
 		E1E3EC0F1BA9023C00482379 /* VSAEmotionTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = E1E3EC0E1BA9023C00482379 /* VSAEmotionTextView.m */; };
+		E1E3EC121BA91F6A00482379 /* UITextView+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = E1E3EC111BA91F6A00482379 /* UITextView+Extension.m */; };
 		E1E4AD021B820600004F3F08 /* VSAOAuthController.m in Sources */ = {isa = PBXBuildFile; fileRef = E1E4AD011B820600004F3F08 /* VSAOAuthController.m */; };
 		E1E4AD181B820D64004F3F08 /* AFHTTPRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = E1E4AD061B820D63004F3F08 /* AFHTTPRequestOperation.m */; };
 		E1E4AD191B820D64004F3F08 /* AFHTTPRequestOperationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E1E4AD081B820D63004F3F08 /* AFHTTPRequestOperationManager.m */; };
@@ -163,6 +164,8 @@
 		E1E387A51B9E974E00E97D2B /* VSAEmotionCollection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VSAEmotionCollection.m; sourceTree = "<group>"; };
 		E1E3EC0D1BA9023C00482379 /* VSAEmotionTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VSAEmotionTextView.h; sourceTree = "<group>"; };
 		E1E3EC0E1BA9023C00482379 /* VSAEmotionTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VSAEmotionTextView.m; sourceTree = "<group>"; };
+		E1E3EC101BA91F6A00482379 /* UITextView+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITextView+Extension.h"; sourceTree = "<group>"; };
+		E1E3EC111BA91F6A00482379 /* UITextView+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextView+Extension.m"; sourceTree = "<group>"; };
 		E1E4AD001B820600004F3F08 /* VSAOAuthController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VSAOAuthController.h; sourceTree = "<group>"; };
 		E1E4AD011B820600004F3F08 /* VSAOAuthController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VSAOAuthController.m; sourceTree = "<group>"; };
 		E1E4AD051B820D63004F3F08 /* AFHTTPRequestOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHTTPRequestOperation.h; sourceTree = "<group>"; };
@@ -467,6 +470,8 @@
 				E1D7421E1B7A55F900CE8C56 /* UIBarButtonItem+Extension.m */,
 				E1D7421F1B7A55F900CE8C56 /* UIView+Extension.h */,
 				E1D742201B7A55F900CE8C56 /* UIView+Extension.m */,
+				E1E3EC101BA91F6A00482379 /* UITextView+Extension.h */,
+				E1E3EC111BA91F6A00482379 /* UITextView+Extension.m */,
 			);
 			path = Category;
 			sourceTree = "<group>";
@@ -977,6 +982,7 @@
 				E1E4C4BC1BA0296C007FB5D9 /* VSAEmotionPageView.m in Sources */,
 				E1F9A34B1B90B6A40053B59E /* VSAStatusFrame.m in Sources */,
 				E1E4AD1F1B820D64004F3F08 /* AFURLResponseSerialization.m in Sources */,
+				E1E3EC121BA91F6A00482379 /* UITextView+Extension.m in Sources */,
 				E1D742471B7A55F900CE8C56 /* VSATest1ViewController.m in Sources */,
 				E1E664D01B837DC1003F407D /* SDWebImageCompat.m in Sources */,
 				E1D76CFA1B7C0D9F008E98BA /* VSADropdownContentController.m in Sources */,
