@@ -10,4 +10,5 @@
 
 @interface UITextView (Extension)
 - (void)insertAttributedText:(NSAttributedString *)text;
+- (void)insertAttributedText:(NSAttributedString *)text settingFontBlock:(void (^)(NSMutableAttributedString *attributedString))settingBlock;
 @end

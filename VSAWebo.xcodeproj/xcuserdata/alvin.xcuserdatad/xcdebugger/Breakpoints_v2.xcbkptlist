@@ -474,11 +474,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "VSAWebo/Main/View/VSATextView.m"
-            timestampString = "462818455.147286"
+            timestampString = "464072528.049256"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "68"
-            endingLineNumber = "68"
+            startingLineNumber = "73"
+            endingLineNumber = "73"
             landmarkName = "-drawRect:"
             landmarkType = "5">
          </BreakpointContent>

@@ -24,12 +24,19 @@
         attachment.bounds = CGRectMake(0, -4, fontHeight, fontHeight);
         NSAttributedString *attributed = [NSAttributedString attributedStringWithAttachment:attachment];
         
-        [self insertAttributedText:attributed];
-        
-        NSMutableAttributedString *textString = (NSMutableAttributedString *)self.attributedText;
-        //拿到所有内容，设置大小
-        [textString addAttribute:NSFontAttributeName value:self.font range:NSMakeRange(0, textString.length)];
+        [self insertAttributedText:attributed settingFontBlock:^(NSMutableAttributedString *attributedString) {
+            //拿到所有内容，设置大小
+            [attributedString addAttribute:NSFontAttributeName value:self.font range:NSMakeRange(0, attributedString.length)];
+        }];
     }
 }
+
+//1.声明一个block变量
+/**
+ void (^settingFontBlock)(NSMutableAttributedString *) = ^(NSMutableAttributedString *attributedString) {
+ [attributedString addAttribute:NSFontAttributeName value:self.font range:NSMakeRange(0, attributedString.length)];
+ };
+ [self insertAttributedText:attributed settingFontBlock:settingFontBlock];
+ */
 
 @end

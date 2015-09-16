@@ -10,6 +10,10 @@
 
 @implementation UITextView (Extension)
 - (void)insertAttributedText:(NSAttributedString *)text {
+    [self insertAttributedText:text settingFontBlock:nil];
+}
+
+-(void)insertAttributedText:(NSAttributedString *)text settingFontBlock:(void (^)(NSMutableAttributedString *))settingBlock {
     //拼接当前显示的文字
     NSMutableAttributedString *aString = [[NSMutableAttributedString alloc] init];
     [aString appendAttributedString:self.attributedText];
@@ -18,9 +22,13 @@
     NSUInteger location = self.selectedRange.location;
     [aString insertAttributedString:text atIndex:location];
     
+    if (settingBlock) {
+        settingBlock(aString);
+    }
     self.attributedText = aString;
     
     //重置光标位置为插入表情的后面
     self.selectedRange = NSMakeRange(location + 1, 0);
 }
+
 @end
