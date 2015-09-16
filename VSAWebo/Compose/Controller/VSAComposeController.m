@@ -7,7 +7,7 @@
 //
 
 #import "VSAComposeController.h"
-#import "VSATextView.h"
+#import "VSAEmotionTextView.h"
 #import "VSAComposeToolbar.h"
 #import "VSAAccountTool.h"
 #import "AFNetworking.h"
@@ -17,7 +17,7 @@
 #import "VSAEmotion.h"
 
 @interface VSAComposeController () <UITextViewDelegate, VSAComposeToolbarDelegate, UIImagePickerControllerDelegate>
-@property (nonatomic, weak) VSATextView *textView;
+@property (nonatomic, weak) VSAEmotionTextView *textView;
 @property (nonatomic, weak) VSAComposeToolbar *toolbar;
 @property (nonatomic, weak) VSAComposePhoto *photo;
 
@@ -63,7 +63,7 @@
 }
 
 - (void)setupTextView {
-    VSATextView *textView = [[VSATextView alloc] init];
+    VSAEmotionTextView *textView = [[VSAEmotionTextView alloc] init];
     textView.frame = self.view.bounds;
     textView.font = [UIFont systemFontOfSize:15];
     textView.placeholder = @"分享新鲜事...";
@@ -109,34 +109,8 @@
 
 - (void)emotionDidSelect:(NSNotification *)notification {
     VSAEmotion *emotion = notification.userInfo[VSASelectedEmotionButtonKey];
-    if (emotion.code) {
-        [self.textView insertText:emotion.code.emoji];
-    } else if (emotion.png) {
-        NSTextAttachment *attachment = [[NSTextAttachment alloc] init];
-        attachment.image = [UIImage imageNamed:emotion.png];
-        
-        //拼接当前显示的文字
-        NSMutableAttributedString *aString = [[NSMutableAttributedString alloc] init];
-        [aString appendAttributedString:self.textView.attributedText];
-        
-        //拼接图片attach
-        NSAttributedString *attributed = [NSAttributedString attributedStringWithAttachment:attachment];
-//        [aString appendAttributedString:attributed];
-        
-        //光标位置插入表情
-        NSUInteger location = self.textView.selectedRange.location;
-        [aString insertAttributedString:attributed atIndex:location];
-        
-        //设置大小
-        CGFloat fontHeight = self.textView.font.lineHeight;
-        attachment.bounds = CGRectMake(0, -4, fontHeight, fontHeight);
-        [aString addAttribute:NSFontAttributeName value:self.textView.font range:NSMakeRange(0, aString.length)];
-        self.textView.attributedText = aString;
-        
-        //重置光标位置为插入表情的后面
-        self.textView.selectedRange = NSMakeRange(location + 1, 0);
-    }
-    NSLog(@"%@", emotion.chs);
+    //Controller只负责接收通知，把插入表情的操作交给textView
+    [self.textView insertEmotion:emotion];
 }
 
 - (void)cancelClick {

@@ -36,6 +36,7 @@
 		E1E387A01B9E96FE00E97D2B /* VSAEmotionKeyboard.m in Sources */ = {isa = PBXBuildFile; fileRef = E1E3879F1B9E96FE00E97D2B /* VSAEmotionKeyboard.m */; };
 		E1E387A31B9E972700E97D2B /* VSAEmotionTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = E1E387A21B9E972700E97D2B /* VSAEmotionTabBar.m */; };
 		E1E387A61B9E974E00E97D2B /* VSAEmotionCollection.m in Sources */ = {isa = PBXBuildFile; fileRef = E1E387A51B9E974E00E97D2B /* VSAEmotionCollection.m */; };
+		E1E3EC0F1BA9023C00482379 /* VSAEmotionTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = E1E3EC0E1BA9023C00482379 /* VSAEmotionTextView.m */; };
 		E1E4AD021B820600004F3F08 /* VSAOAuthController.m in Sources */ = {isa = PBXBuildFile; fileRef = E1E4AD011B820600004F3F08 /* VSAOAuthController.m */; };
 		E1E4AD181B820D64004F3F08 /* AFHTTPRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = E1E4AD061B820D63004F3F08 /* AFHTTPRequestOperation.m */; };
 		E1E4AD191B820D64004F3F08 /* AFHTTPRequestOperationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E1E4AD081B820D63004F3F08 /* AFHTTPRequestOperationManager.m */; };
@@ -160,6 +161,8 @@
 		E1E387A21B9E972700E97D2B /* VSAEmotionTabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VSAEmotionTabBar.m; sourceTree = "<group>"; };
 		E1E387A41B9E974E00E97D2B /* VSAEmotionCollection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VSAEmotionCollection.h; sourceTree = "<group>"; };
 		E1E387A51B9E974E00E97D2B /* VSAEmotionCollection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VSAEmotionCollection.m; sourceTree = "<group>"; };
+		E1E3EC0D1BA9023C00482379 /* VSAEmotionTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VSAEmotionTextView.h; sourceTree = "<group>"; };
+		E1E3EC0E1BA9023C00482379 /* VSAEmotionTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VSAEmotionTextView.m; sourceTree = "<group>"; };
 		E1E4AD001B820600004F3F08 /* VSAOAuthController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VSAOAuthController.h; sourceTree = "<group>"; };
 		E1E4AD011B820600004F3F08 /* VSAOAuthController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VSAOAuthController.m; sourceTree = "<group>"; };
 		E1E4AD051B820D63004F3F08 /* AFHTTPRequestOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHTTPRequestOperation.h; sourceTree = "<group>"; };
@@ -777,6 +780,8 @@
 				E1F1909A1BA7E06C00D5458E /* VSAEmotionPopView.m */,
 				E1F1909C1BA7F52E00D5458E /* VSAEmotionButton.h */,
 				E1F1909D1BA7F52E00D5458E /* VSAEmotionButton.m */,
+				E1E3EC0D1BA9023C00482379 /* VSAEmotionTextView.h */,
+				E1E3EC0E1BA9023C00482379 /* VSAEmotionTextView.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -967,6 +972,7 @@
 				E1515CE31B8F301400B605AA /* VSAUser.m in Sources */,
 				E1E4AD201B820D64004F3F08 /* AFURLSessionManager.m in Sources */,
 				E1E3879D1B9E76FD00E97D2B /* VSAComposePhoto.m in Sources */,
+				E1E3EC0F1BA9023C00482379 /* VSAEmotionTextView.m in Sources */,
 				E1F9A3401B90B3390053B59E /* MJFoundation.m in Sources */,
 				E1E4C4BC1BA0296C007FB5D9 /* VSAEmotionPageView.m in Sources */,
 				E1F9A34B1B90B6A40053B59E /* VSAStatusFrame.m in Sources */,
