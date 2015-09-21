@@ -4,39 +4,45 @@
 <array>
 	<dict>
 		<key>name</key>
-		<string>新的好友</string>
+		<string>余额</string>
 		<key>pic</key>
-		<string>new_friend</string>
+		<string>mine_balance</string>
 	</dict>
 	<dict>
 		<key>name</key>
-		<string>草稿箱</string>
+		<string>优惠券</string>
 		<key>pic</key>
-		<string>draft</string>
+		<string>mine_coupon</string>
 	</dict>
 	<dict>
 		<key>name</key>
-		<string>我的赞</string>
+		<string>常用地址</string>
 		<key>pic</key>
-		<string>like</string>
+		<string>mine_address</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>分享给好友</string>
+		<key>pic</key>
+		<string>mine_share</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>绑定实体卡</string>
+		<key>pic</key>
+		<string>mine_card</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>意见反馈</string>
+		<key>pic</key>
+		<string>mine_feedback</string>
     </dict>
     <dict>
         <key>name</key>
-        <string>更多</string>
+        <string>更多设置</string>
         <key>pic</key>
-        <string>more</string>
-    </dict>
-    <dict>
-        <key>name</key>
-        <string>微博支付</string>
-        <key>pic</key>
-        <string>pay</string>
-    </dict>
-    <dict>
-        <key>name</key>
-        <string>微博会员</string>
-        <key>pic</key>
-        <string>vip</string>
+        <string>mine_more</string>
     </dict>
 </array>
 </plist>

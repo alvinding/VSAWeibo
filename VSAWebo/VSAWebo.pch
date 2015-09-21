@@ -22,5 +22,7 @@
 //通知
 #define VSAEmotionButtonDidSelectNotification @"VSAEmotionButtonDidSelectNotification"
 #define VSASelectedEmotionButtonKey @"VSASelectedEmotionButtonKey"
+#define VSADeleteButtonDidSelectNotification @"VSADeleteButtonDidSelectNotification"
+#define VSADeleteButtonKey @"VSADeleteButtonKey"
 
 #endif

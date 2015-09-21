@@ -87,6 +87,9 @@
     
     //通知表情按钮被选
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(emotionDidSelect:) name:VSAEmotionButtonDidSelectNotification object:nil];
+    
+    //通知，删除按钮点击
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(delBtnDidClick:) name:VSADeleteButtonDidSelectNotification object:nil];
 }
 
 - (void)setupToolbar {
@@ -111,6 +114,10 @@
     VSAEmotion *emotion = notification.userInfo[VSASelectedEmotionButtonKey];
     //Controller只负责接收通知，把插入表情的操作交给textView
     [self.textView insertEmotion:emotion];
+}
+
+- (void)delBtnDidClick:(NSNotification *)notification {
+    [self.textView deleteBackward];
 }
 
 - (void)cancelClick {

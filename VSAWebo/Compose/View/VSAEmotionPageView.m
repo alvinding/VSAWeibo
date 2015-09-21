@@ -52,6 +52,7 @@
     //添加删除按钮
     UIButton *delBtn = [[UIButton alloc] init];
     [delBtn setImage:[UIImage imageNamed:@"compose_emotion_delete"] forState:UIControlStateNormal];
+    [delBtn addTarget:self action:@selector(delBtnClick:) forControlEvents:UIControlEventTouchUpInside];
     [self addSubview:delBtn];
     self.delButton = delBtn;
     
@@ -105,6 +106,11 @@
     
     //通知，让controller 接收到，因为textView在controll中
     [[NSNotificationCenter defaultCenter] postNotificationName:VSAEmotionButtonDidSelectNotification object:nil userInfo:userInfo];
+    
+}
+
+- (void)delBtnClick:(UIButton *)btn {
+    [[NSNotificationCenter defaultCenter] postNotificationName:VSADeleteButtonDidSelectNotification object:nil];
 }
 
 - (void)longPressPageView:(UILongPressGestureRecognizer *)recognizer {

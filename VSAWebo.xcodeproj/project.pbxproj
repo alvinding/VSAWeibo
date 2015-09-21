@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		E1515CE31B8F301400B605AA /* VSAUser.m in Sources */ = {isa = PBXBuildFile; fileRef = E1515CE21B8F301400B605AA /* VSAUser.m */; };
+		E15927D91BAFD35C004D3147 /* VSAAccount.m in Sources */ = {isa = PBXBuildFile; fileRef = E15927D81BAFD35C004D3147 /* VSAAccount.m */; settings = {ASSET_TAGS = (); }; };
 		E163B5041B9163C200E0D29F /* VSAPhoto.m in Sources */ = {isa = PBXBuildFile; fileRef = E163B5031B9163C200E0D29F /* VSAPhoto.m */; };
 		E169B1431B8F37CE00D1257B /* VSAStatus.m in Sources */ = {isa = PBXBuildFile; fileRef = E169B1421B8F37CE00D1257B /* VSAStatus.m */; };
 		E1D54DF61B778E6000099ABA /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E1D54DF51B778E6000099ABA /* Images.xcassets */; };
@@ -48,7 +49,6 @@
 		E1E4AD1E1B820D64004F3F08 /* AFURLRequestSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = E1E4AD131B820D64004F3F08 /* AFURLRequestSerialization.m */; };
 		E1E4AD1F1B820D64004F3F08 /* AFURLResponseSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = E1E4AD151B820D64004F3F08 /* AFURLResponseSerialization.m */; };
 		E1E4AD201B820D64004F3F08 /* AFURLSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E1E4AD171B820D64004F3F08 /* AFURLSessionManager.m */; };
-		E1E4AD241B822C2F004F3F08 /* VSAAccount.m in Sources */ = {isa = PBXBuildFile; fileRef = E1E4AD231B822C2F004F3F08 /* VSAAccount.m */; };
 		E1E4C4B51B9FBFF0007FB5D9 /* EmotionIcons in Resources */ = {isa = PBXBuildFile; fileRef = E1E4C4B41B9FBFF0007FB5D9 /* EmotionIcons */; };
 		E1E4C4B91B9FCAE4007FB5D9 /* VSAEmotion.m in Sources */ = {isa = PBXBuildFile; fileRef = E1E4C4B81B9FCAE4007FB5D9 /* VSAEmotion.m */; };
 		E1E4C4BC1BA0296C007FB5D9 /* VSAEmotionPageView.m in Sources */ = {isa = PBXBuildFile; fileRef = E1E4C4BB1BA0296C007FB5D9 /* VSAEmotionPageView.m */; };
@@ -105,8 +105,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		E1380B5A1BAC086700355860 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		E1515CE11B8F301400B605AA /* VSAUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VSAUser.h; sourceTree = "<group>"; };
 		E1515CE21B8F301400B605AA /* VSAUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VSAUser.m; sourceTree = "<group>"; };
+		E15927D71BAFD35C004D3147 /* VSAAccount.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VSAAccount.h; sourceTree = "<group>"; };
+		E15927D81BAFD35C004D3147 /* VSAAccount.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VSAAccount.m; sourceTree = "<group>"; };
 		E163B5021B9163C200E0D29F /* VSAPhoto.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VSAPhoto.h; sourceTree = "<group>"; };
 		E163B5031B9163C200E0D29F /* VSAPhoto.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VSAPhoto.m; sourceTree = "<group>"; };
 		E169B1411B8F37CE00D1257B /* VSAStatus.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VSAStatus.h; sourceTree = "<group>"; };
@@ -187,8 +190,6 @@
 		E1E4AD151B820D64004F3F08 /* AFURLResponseSerialization.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLResponseSerialization.m; sourceTree = "<group>"; };
 		E1E4AD161B820D64004F3F08 /* AFURLSessionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFURLSessionManager.h; sourceTree = "<group>"; };
 		E1E4AD171B820D64004F3F08 /* AFURLSessionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLSessionManager.m; sourceTree = "<group>"; };
-		E1E4AD221B822C2F004F3F08 /* VSAAccount.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VSAAccount.h; sourceTree = "<group>"; };
-		E1E4AD231B822C2F004F3F08 /* VSAAccount.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VSAAccount.m; sourceTree = "<group>"; };
 		E1E4C4B41B9FBFF0007FB5D9 /* EmotionIcons */ = {isa = PBXFileReference; lastKnownFileType = folder; path = EmotionIcons; sourceTree = "<group>"; };
 		E1E4C4B71B9FCAE4007FB5D9 /* VSAEmotion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VSAEmotion.h; sourceTree = "<group>"; };
 		E1E4C4B81B9FCAE4007FB5D9 /* VSAEmotion.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VSAEmotion.m; sourceTree = "<group>"; };
@@ -297,6 +298,7 @@
 		E1D54DDC1B778E6000099ABA = {
 			isa = PBXGroup;
 			children = (
+				E1380B5A1BAC086700355860 /* Security.framework */,
 				E1D54DE71B778E6000099ABA /* VSAWebo */,
 				E1D54E011B778E6000099ABA /* VSAWeboTests */,
 				E1D54DE61B778E6000099ABA /* Products */,
@@ -682,8 +684,8 @@
 		E1E4AD211B822C14004F3F08 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				E1E4AD221B822C2F004F3F08 /* VSAAccount.h */,
-				E1E4AD231B822C2F004F3F08 /* VSAAccount.m */,
+				E15927D71BAFD35C004D3147 /* VSAAccount.h */,
+				E15927D81BAFD35C004D3147 /* VSAAccount.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -972,6 +974,7 @@
 				E1E387A61B9E974E00E97D2B /* VSAEmotionCollection.m in Sources */,
 				E1E664D61B837DC1003F407D /* UIButton+WebCache.m in Sources */,
 				E1E664D21B837DC1003F407D /* SDWebImageDownloader.m in Sources */,
+				E15927D91BAFD35C004D3147 /* VSAAccount.m in Sources */,
 				E1E664D91B837DC1003F407D /* UIImage+WebP.m in Sources */,
 				E1E664D81B837DC1003F407D /* UIImage+MultiFormat.m in Sources */,
 				E1515CE31B8F301400B605AA /* VSAUser.m in Sources */,
@@ -1000,7 +1003,6 @@
 				E1E664CE1B837DC1003F407D /* NSData+ImageContentType.m in Sources */,
 				E1F9A33F1B90B3390053B59E /* MJExtensionConst.m in Sources */,
 				E1E664DA1B837DC1003F407D /* UIImageView+HighlightedWebCache.m in Sources */,
-				E1E4AD241B822C2F004F3F08 /* VSAAccount.m in Sources */,
 				E1D7424C1B7A55F900CE8C56 /* VSAProfileViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1115,6 +1117,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Wei feng Hou (ZXLU7WXR29)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/VSAWebo/VSAWebo.pch";
@@ -1129,6 +1132,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/VSAWebo/VSAWebo.pch";
 				INFOPLIST_FILE = VSAWebo/Info.plist;
